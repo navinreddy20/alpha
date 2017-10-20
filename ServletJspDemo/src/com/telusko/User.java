@@ -12,6 +12,7 @@ public class User
 		this.uid = uid;
 	}
 	public String getUname() {
+		System.out.println("Im getting called...");
 		return uname;
 	}
 	public void setUname(String uname) {

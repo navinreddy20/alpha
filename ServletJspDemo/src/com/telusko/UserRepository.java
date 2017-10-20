@@ -15,9 +15,7 @@ import javax.sql.DataSource;
 
 public class UserRepository // UserDAO (Data Access Object)
 {			
-	String url = "jdbc:mysql://localhost:3306/alpha";
-	String user = "root";
-	String password = "0";
+	
 	Connection con = null;
 	
 	public UserRepository()

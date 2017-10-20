@@ -1,6 +1,8 @@
 package com.telusko;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,17 +15,22 @@ public class InsertServlet extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
-			
+		System.out.println("In Servlet");
 		
-			User u = new User();
-			
-			u.setUid(Integer.parseInt(request.getParameter("uid")));
-			u.setUname(request.getParameter("uname"));
-			u.setAge(Integer.parseInt(request.getParameter("age")));
-			
-			UserRepository repo = new UserRepository();
-			repo.save(u);
-			
+		PrintWriter out = response.getWriter();
+//		int age = Integer.parseInt(request.getParameter("age"));
+//		
+//			User u = new User();
+//			
+//			u.setUid(Integer.parseInt(request.getParameter("uid")));
+//			u.setUname(request.getParameter("uname"));
+//			u.setAge(age);
+//			
+//			UserRepository repo = new UserRepository();
+//			//repo.save(u);
+//			
+			out.println("Data Saved");
+		
 		
 	}
 
