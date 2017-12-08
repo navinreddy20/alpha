@@ -8,10 +8,6 @@
 </head>
 <body>
 	Hello : ${a}
-	<br>
-
-	
-	
-	default alien : ${myAlien}			
+			
 </body>
 </html>

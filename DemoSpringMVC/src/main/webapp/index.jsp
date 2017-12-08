@@ -14,7 +14,7 @@
 
 
 	<form action="alien">
-		<input type="text" name="aname"><br>
+		<input type="text" name="aid"><br>
 		
 		<input type="submit" value="Fetch Alien">
 	</form>

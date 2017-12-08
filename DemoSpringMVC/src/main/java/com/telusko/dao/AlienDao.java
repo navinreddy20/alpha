@@ -22,4 +22,14 @@ public class AlienDao
 		Session session = sf.getCurrentSession();
 		session.save(a);
 	}
+	
+	@Transactional
+	public Alien getAlien(int aid)
+	{
+		
+		Session session = sf.getCurrentSession();
+		return session.get(Alien.class, aid);
+	}
+	
+	
 }
