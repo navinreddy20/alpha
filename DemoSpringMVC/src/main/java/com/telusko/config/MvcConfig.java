@@ -19,7 +19,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 import com.telusko.Alien;
 
-@Configuration
+@Component
 @ComponentScan("com.telusko")
 @EnableWebMvc
 @EnableTransactionManagement
